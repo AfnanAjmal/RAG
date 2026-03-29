@@ -2,15 +2,44 @@
 langchain==0.3.7
 langchain-community==0.3.7
 langchain-huggingface==0.1.2
+langchain-chroma==0.1.4
+langchain-groq==0.2.4
+langchain-core==0.3.63
+langchain-text-splitters==0.3.8
 
 # Vector Store
 chromadb==0.5.18
 
 # Embeddings / ML
 sentence-transformers==3.3.1
+transformers==4.57.6
 torch==2.2.2
-torchvision==0.17.2
+tokenizers==0.22.2
+safetensors==0.7.0
+huggingface_hub==0.36.2
+
+# LLM API
+groq==0.37.1
+
+# Document Loading
+pypdf==6.9.2
+
+# Web UI
+streamlit==1.55.0
+
+# Data / Utilities
+numpy==1.26.4
+scikit-learn==1.8.0
+scipy==1.17.1
+pandas==2.3.3
+
+# HTTP / Networking
+httpx==0.28.1
+requests==2.33.0
 
 # Utilities
-python-dotenv==1.0.1
-huggingface-hub==0.26.2
+python-dotenv==1.2.2
+pydantic==2.12.5
+tenacity==9.1.4
+tqdm==4.67.3
+packaging==24.2
