@@ -1,0 +1,46 @@
+# Secrets
+.env
+
+# Vector store (large binary blobs — regenerated locally)
+chroma-db/
+
+# Source PDFs (usually large, not source code)
+Document_loader/*.pdf
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+
+# Conda
+*.conda
+
+# Pytest / coverage
+.pytest_cache/
+htmlcov/
+.coverage
