@@ -229,7 +229,6 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
-pip install streamlit langchain-chroma langchain-groq
 ```
 
 ### Option B — conda
@@ -237,7 +236,7 @@ pip install streamlit langchain-chroma langchain-groq
 ```bash
 conda env create -f environment.yml
 conda activate rag-env
-pip install streamlit langchain-chroma langchain-groq
+pip install -r requirements.txt
 ```
 
 > **Python 3.11** is required (specified in `environment.yml`).
@@ -300,14 +299,22 @@ python RAG.py
 | `langchain` | 0.3.7 | Core RAG orchestration |
 | `langchain-community` | 0.3.7 | Document loaders, retrievers |
 | `langchain-huggingface` | 0.1.2 | HuggingFace embeddings integration |
-| `langchain-chroma` | latest | Chroma vector store integration |
-| `langchain-groq` | latest | Groq LLM integration |
+| `langchain-chroma` | 0.1.4 | Chroma vector store integration |
+| `langchain-groq` | 0.2.4 | Groq LLM integration |
+| `langchain-core` | 0.3.63 | LangChain core primitives |
+| `langchain-text-splitters` | 0.3.8 | Text splitting utilities |
 | `chromadb` | 0.5.18 | Local vector database |
 | `sentence-transformers` | 3.3.1 | bge-small-en-v1.5 embedding model |
+| `transformers` | 4.57.6 | HuggingFace model backend |
 | `torch` | 2.2.2 | PyTorch backend for embeddings |
-| `streamlit` | latest | Web UI |
-| `python-dotenv` | 1.0.1 | `.env` file loading |
-| `huggingface-hub` | 0.26.2 | Model downloading |
+| `groq` | 0.37.1 | Groq Python SDK |
+| `pypdf` | 6.9.2 | PDF loading |
+| `streamlit` | 1.55.0 | Web UI |
+| `python-dotenv` | 1.2.2 | `.env` file loading |
+| `huggingface-hub` | 0.36.2 | Model downloading |
+| `numpy` | 1.26.4 | Numerical operations |
+| `scikit-learn` | 1.8.0 | ML utilities (used by retrieval internals) |
+| `pydantic` | 2.12.5 | Data validation (LangChain dependency) |
 
 ---
 
